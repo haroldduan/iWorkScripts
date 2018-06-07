@@ -29,7 +29,7 @@ function CreateFoldersStructure([string]$root_path,[string]$root_name)
     $current_path = "$root_path\$root_name"
     echo "This current folder's path :[$current_path]!"
     echo "Creating the project's folder..."
-    $folders_1st_level = "1.需求说明","2.设计文档","3.数据库相关","4.项目源代码","5.开发主计划","6.客户往来资料","7.交付客户内容","8.开发工作单","9.问题处理记录","10.项目验收和稽核".ToString()
+    $folders_1st_level = "1.需求说明","2.设计文档","3.数据库相关","4.项目源代码","5.开发主计划","6.客户往来资料","7.交付客户内容","8.开发工作单","9.问题处理记录","10.项目验收和稽核"
     CreateSubFolders $current_path $folders_1st_level
     $father_path = "$current_path\1.需求说明"
     $folders_2nd_level = "开发需求解读(工作任务书,调研文档..)","客户提供资料","商务文档"
