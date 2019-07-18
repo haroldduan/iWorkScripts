@@ -1,7 +1,7 @@
 #!/bin/bash
 # Genprof,means [GenerateProjectsFolders]'s abbreviation.
 # Programmer:Harold.Duan
-# Date:20180607
+# Date:20180717
 # Reason:[GenerateProjectsFolders] Auto generate project's folders.
 
 read -p "Enter the project's period,like p1,p2,p3... > " period
