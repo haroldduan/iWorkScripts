@@ -13,7 +13,7 @@ function WriteContents([String]$file,[String]$cur_path,[Int]$depth,[String]$last
     # echo $cur_info
     if ($cur_info.Count -gt 0)
     {
-        Get-ChildItem $cur_path -Exclude *.ps1,*.md | ForEach-Object -Process{
+        Get-ChildItem $cur_path -Exclude *.ps1,*.md,.git* | ForEach-Object -Process{
             $cur_dir = $_.Name
             echo $cur_dir
             # echo $_.Directory
